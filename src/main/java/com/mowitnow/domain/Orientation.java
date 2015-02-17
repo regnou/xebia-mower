@@ -12,12 +12,18 @@ public enum Orientation {
     WEST;
 
     private Orientation leftOrientation;
+    private Orientation rightOrientation;
 
     static {
         NORTH.leftOrientation = WEST;
         SOUTH.leftOrientation = EAST;
         EAST.leftOrientation = NORTH;
         WEST.leftOrientation = SOUTH;
+
+        NORTH.rightOrientation = EAST;
+        SOUTH.rightOrientation = WEST;
+        EAST.rightOrientation = SOUTH;
+        WEST.rightOrientation = NORTH;
     }
 
     /**
@@ -27,5 +33,14 @@ public enum Orientation {
      */
     public Orientation getLeftOrientation() {
         return leftOrientation;
+    }
+
+    /**
+     * Return the orientation 90 degrees right from this orientation
+     *
+     * @return an {@link com.mowitnow.domain.Orientation}
+     */
+    public Orientation getRightOrientation() {
+        return rightOrientation;
     }
 }

@@ -44,7 +44,7 @@ public class LawnMower implements Mower {
 
     @Override
     public void rotateRight() {
-
+        orientation = orientation.getRightOrientation();
     }
 
     @Override

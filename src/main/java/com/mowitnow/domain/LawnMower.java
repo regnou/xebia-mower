@@ -1,5 +1,7 @@
 package com.mowitnow.domain;
 
+import static com.mowitnow.domain.Orientation.*;
+
 /**
  * Default {@link com.mowitnow.domain.Mower} implementation.
  */
@@ -7,14 +9,26 @@ public class LawnMower implements Mower {
 
     private int x;
     private int y;
-    private Orientation orientation = Orientation.NORTH;
+    private Orientation orientation = NORTH;
 
     public LawnMower(int x, int y, Orientation orientation) {
+        this.x = x;
+        this.y = y;
+        this.orientation = orientation;
     }
 
     @Override
     public void move() {
-        y++;
+        switch (orientation) {
+            case NORTH:
+                y++;
+                break;
+            case SOUTH:
+                y--;
+                break;
+            default:
+                throw new UnsupportedOperationException("Cannot move according to unknown orientation : " + orientation);
+        }
     }
 
     @Override
@@ -30,5 +44,14 @@ public class LawnMower implements Mower {
     @Override
     public Orientation getOrientation() {
         return orientation;
+    }
+
+    @Override
+    public String toString() {
+        return "LawnMower{" +
+                "x=" + x +
+                ", y=" + y +
+                ", orientation=" + orientation +
+                '}';
     }
 }

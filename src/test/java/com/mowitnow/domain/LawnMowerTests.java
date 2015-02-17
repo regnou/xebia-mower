@@ -10,6 +10,8 @@ import static org.testng.Assert.assertEquals;
 @Test
 public class LawnMowerTests {
 
+    //~ MOVE ===========================================================================================================
+
     public void Given_MowerFacingNorth_When_ToldToMove_Then_StopOnAdjacentUpperPositionFacingNorth() {
         LawnMower lawnMower = LawnMowerFixtures.newLawnMowerAtDefaultInitialPositionFacingNorth();
 
@@ -48,5 +50,17 @@ public class LawnMowerTests {
         assertEquals(lawnMower.getX(), 0);
         assertEquals(lawnMower.getY(), 1);
         assertEquals(lawnMower.getOrientation(), Orientation.WEST);
+    }
+
+    //~ ROTATE LEFT ====================================================================================================
+
+    public void Given_MowerFacingEast_When_ToldToRotateLeft_Then_StopOnSamePositionFacingNorth() {
+        LawnMower lawnMower = LawnMowerFixtures.newLawnMowerAtCenterPositionFacingEast();
+
+        lawnMower.rotateLeft();
+
+        assertEquals(lawnMower.getX(), 1);
+        assertEquals(lawnMower.getY(), 1);
+        assertEquals(lawnMower.getOrientation(), Orientation.NORTH);
     }
 }

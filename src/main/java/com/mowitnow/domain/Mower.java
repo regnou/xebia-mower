@@ -10,6 +10,11 @@ public interface Mower {
      */
     public void move();
 
+    /**
+     * Rotate this mower 90 degrees to the left
+     */
+    public void rotateLeft();
+
     public int getX();
     public int getY();
     public Orientation getOrientation();

@@ -39,7 +39,9 @@ public class LawnMower implements Mower {
 
     @Override
     public void rotateLeft() {
-
+        if (Orientation.EAST.equals(orientation)) {
+            orientation = Orientation.NORTH;
+        }
     }
 
     @Override

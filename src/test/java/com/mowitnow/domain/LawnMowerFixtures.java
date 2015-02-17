@@ -10,7 +10,7 @@ public class LawnMowerFixtures {
      *
      * @return a new {@link com.mowitnow.domain.LawnMower}
      */
-    public static LawnMower newLawnMower() {
+    public static LawnMower newLawnMowerAtDefaultInitialPositionFacingNorth() {
         return new LawnMower();
     }
 }

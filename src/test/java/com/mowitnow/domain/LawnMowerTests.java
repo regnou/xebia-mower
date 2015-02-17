@@ -11,7 +11,7 @@ import static org.testng.Assert.assertEquals;
 public class LawnMowerTests {
 
     public void Given_MowerFacingNorth_When_ToldToMove_Then_StopOnAdjacentUpperPositionFacingNorth() {
-        LawnMower lawnMower = LawnMowerFixtures.newLawnMower();
+        LawnMower lawnMower = LawnMowerFixtures.newLawnMowerAtDefaultInitialPositionFacingNorth();
 
         lawnMower.move();
 

@@ -5,23 +5,27 @@ package com.mowitnow.domain;
  */
 public class LawnMower implements Mower {
 
+    private int x;
+    private int y;
+    private Orientation orientation = Orientation.NORTH;
+
     @Override
     public void move() {
-
+        y++;
     }
 
     @Override
     public int getX() {
-        return 0;
+        return x;
     }
 
     @Override
     public int getY() {
-        return 0;
+        return y;
     }
 
     @Override
     public Orientation getOrientation() {
-        return null;
+        return orientation;
     }
 }

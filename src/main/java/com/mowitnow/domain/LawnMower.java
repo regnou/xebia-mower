@@ -9,6 +9,9 @@ public class LawnMower implements Mower {
     private int y;
     private Orientation orientation = Orientation.NORTH;
 
+    public LawnMower(int x, int y, Orientation orientation) {
+    }
+
     @Override
     public void move() {
         y++;

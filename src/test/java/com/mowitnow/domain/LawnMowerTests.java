@@ -19,4 +19,14 @@ public class LawnMowerTests {
         assertEquals(lawnMower.getY(), 1);
         assertEquals(lawnMower.getOrientation(), Orientation.NORTH);
     }
+
+    public void Given_MowerFacingSouth_When_ToldToMove_Then_StopOnAdjacentLowerPositionFacingSouth() {
+        LawnMower lawnMower = LawnMowerFixtures.newLawnMowerAtCenterPositionFacingSouth();
+
+        lawnMower.move();
+
+        assertEquals(lawnMower.getX(), 1);
+        assertEquals(lawnMower.getY(), 0);
+        assertEquals(lawnMower.getOrientation(), Orientation.SOUTH);
+    }
 }

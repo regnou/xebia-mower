@@ -43,6 +43,11 @@ public class LawnMower implements Mower {
     }
 
     @Override
+    public void rotateRight() {
+
+    }
+
+    @Override
     public int getX() {
         return x;
     }

@@ -93,4 +93,46 @@ public class LawnMowerTests {
         assertEquals(lawnMower.getY(), 1);
         assertEquals(lawnMower.getOrientation(), Orientation.SOUTH);
     }
+
+    //~ ROTATE RIGHT ===================================================================================================
+
+    public void Given_MowerFacingEast_When_ToldToRotateRight_Then_StopOnSamePositionFacingSouth() {
+        LawnMower lawnMower = LawnMowerFixtures.newLawnMowerAtCenterPositionFacingEast();
+
+        lawnMower.rotateRight();
+
+        assertEquals(lawnMower.getX(), 1);
+        assertEquals(lawnMower.getY(), 1);
+        assertEquals(lawnMower.getOrientation(), Orientation.SOUTH);
+    }
+
+    public void Given_MowerFacingNorth_When_ToldToRotateRight_Then_StopOnSamePositionFacingEast() {
+        LawnMower lawnMower = LawnMowerFixtures.newLawnMowerAtDefaultInitialPositionFacingNorth();
+
+        lawnMower.rotateRight();
+
+        assertEquals(lawnMower.getX(), 0);
+        assertEquals(lawnMower.getY(), 0);
+        assertEquals(lawnMower.getOrientation(), Orientation.EAST);
+    }
+
+    public void Given_MowerFacingSouth_When_ToldToRotateRight_Then_StopOnSamePositionFacingWest() {
+        LawnMower lawnMower = LawnMowerFixtures.newLawnMowerAtCenterPositionFacingSouth();
+
+        lawnMower.rotateRight();
+
+        assertEquals(lawnMower.getX(), 1);
+        assertEquals(lawnMower.getY(), 1);
+        assertEquals(lawnMower.getOrientation(), Orientation.WEST);
+    }
+
+    public void Given_MowerFacingWest_When_ToldToRotateRight_Then_StopOnSamePositionFacingNorth() {
+        LawnMower lawnMower = LawnMowerFixtures.newLawnMowerAtCenterPositionFacingWest();
+
+        lawnMower.rotateRight();
+
+        assertEquals(lawnMower.getX(), 1);
+        assertEquals(lawnMower.getY(), 1);
+        assertEquals(lawnMower.getOrientation(), Orientation.NORTH);
+    }
 }

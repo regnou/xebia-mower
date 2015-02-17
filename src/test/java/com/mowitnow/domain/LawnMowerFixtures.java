@@ -23,6 +23,24 @@ public class LawnMowerFixtures {
         return newLawnMowerAtCenterPositionFacingGivenOrientation(Orientation.SOUTH);
     }
 
+    /**
+     * Create a LawnMower at position [1, 1] facing East and return it
+     *
+     * @return a new {@link com.mowitnow.domain.LawnMower}
+     */
+    public static LawnMower newLawnMowerAtCenterPositionFacingEast() {
+        return newLawnMowerAtCenterPositionFacingGivenOrientation(Orientation.EAST);
+    }
+
+    /**
+     * Create a LawnMower at position [1, 1] facing West and return it
+     *
+     * @return a new {@link com.mowitnow.domain.LawnMower}
+     */
+    public static LawnMower newLawnMowerAtCenterPositionFacingWest() {
+        return newLawnMowerAtCenterPositionFacingGivenOrientation(Orientation.WEST);
+    }
+
     private static LawnMower newLawnMowerAtCenterPositionFacingGivenOrientation(Orientation orientation) {
         return newLawnMowerAtGivenPositionFacingGivenOrientation(1, 1, orientation);
     }

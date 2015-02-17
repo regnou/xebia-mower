@@ -29,4 +29,24 @@ public class LawnMowerTests {
         assertEquals(lawnMower.getY(), 0);
         assertEquals(lawnMower.getOrientation(), Orientation.SOUTH);
     }
+
+    public void Given_MowerFacingEast_When_ToldToMove_Then_StopOnAdjacentRightPositionFacingEast() {
+        LawnMower lawnMower = LawnMowerFixtures.newLawnMowerAtCenterPositionFacingEast();
+
+        lawnMower.move();
+
+        assertEquals(lawnMower.getX(), 2);
+        assertEquals(lawnMower.getY(), 1);
+        assertEquals(lawnMower.getOrientation(), Orientation.EAST);
+    }
+
+    public void Given_MowerFacingWest_When_ToldToMove_Then_StopOnAdjacentLeftPositionFacingWest() {
+        LawnMower lawnMower = LawnMowerFixtures.newLawnMowerAtCenterPositionFacingWest();
+
+        lawnMower.move();
+
+        assertEquals(lawnMower.getX(), 0);
+        assertEquals(lawnMower.getY(), 1);
+        assertEquals(lawnMower.getOrientation(), Orientation.WEST);
+    }
 }

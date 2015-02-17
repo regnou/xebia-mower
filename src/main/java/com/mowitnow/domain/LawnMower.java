@@ -26,6 +26,12 @@ public class LawnMower implements Mower {
             case SOUTH:
                 y--;
                 break;
+            case EAST:
+                x++;
+                break;
+            case WEST:
+                x--;
+                break;
             default:
                 throw new UnsupportedOperationException("Cannot move according to unknown orientation : " + orientation);
         }

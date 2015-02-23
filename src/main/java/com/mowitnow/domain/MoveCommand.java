@@ -5,11 +5,14 @@ package com.mowitnow.domain;
  */
 public class MoveCommand implements Command {
 
+    private final Mower mower;
+
     public MoveCommand(Mower mower) {
+        this.mower = mower;
     }
 
     @Override
     public void execute() {
-
+        mower.move();
     }
 }

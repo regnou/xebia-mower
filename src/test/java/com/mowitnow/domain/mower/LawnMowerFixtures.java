@@ -45,7 +45,14 @@ public class LawnMowerFixtures {
         return newLawnMowerAtGivenPositionFacingGivenOrientation(1, 1, orientation);
     }
 
-    private static LawnMower newLawnMowerAtGivenPositionFacingGivenOrientation(int x, int y, Orientation orientation) {
+    /**
+     * Create a LawnMower ar given position facing the given {@link com.mowitnow.domain.mower.Orientation}
+     * @param x the x coordinate of the mower
+     * @param y the y coordinate of the mower
+     * @param orientation the orientation of the mower
+     * @return a new {@link com.mowitnow.domain.mower.LawnMower}
+     */
+    public static LawnMower newLawnMowerAtGivenPositionFacingGivenOrientation(int x, int y, Orientation orientation) {
         return new LawnMower(x, y, orientation);
     }
 }

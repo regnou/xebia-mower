@@ -5,12 +5,14 @@ package com.mowitnow.domain;
  */
 public class RotateRightCommand implements Command {
 
-    public RotateRightCommand(Mower mower) {
+    private final Mower mower;
 
+    public RotateRightCommand(Mower mower) {
+        this.mower = mower;
     }
 
     @Override
     public void execute() {
-
+        mower.rotateRight();
     }
 }

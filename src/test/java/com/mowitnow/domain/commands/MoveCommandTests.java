@@ -1,12 +1,14 @@
-package com.mowitnow.domain;
+package com.mowitnow.domain.commands;
 
+import com.mowitnow.domain.mower.LawnMower;
+import com.mowitnow.domain.mower.Mower;
 import org.mockito.Mockito;
 import org.testng.annotations.Test;
 
 import static org.mockito.Mockito.mock;
 
 /**
- * {@link com.mowitnow.domain.MoveCommand} unit testing.
+ * {@link com.mowitnow.domain.commands.MoveCommand} unit testing.
  */
 @Test
 public class MoveCommandTests {

@@ -1,14 +1,14 @@
-package com.mowitnow.domain;
+package com.mowitnow.domain.mower;
 
 /**
- * {@link com.mowitnow.domain.LawnMower} Fixtures
+ * {@link com.mowitnow.domain.mower.LawnMower} Fixtures
  */
 public class LawnMowerFixtures {
 
     /**
      * Create a LawnMower at position [0, 0] facing North and return it
      *
-     * @return a new {@link com.mowitnow.domain.LawnMower}
+     * @return a new {@link com.mowitnow.domain.mower.LawnMower}
      */
     public static LawnMower newLawnMowerAtDefaultInitialPositionFacingNorth() {
         return newLawnMowerAtGivenPositionFacingGivenOrientation(0, 0, Orientation.NORTH);
@@ -17,7 +17,7 @@ public class LawnMowerFixtures {
     /**
      * Create a LawnMower at position [1, 1] facing South and return it
      *
-     * @return a new {@link com.mowitnow.domain.LawnMower}
+     * @return a new {@link com.mowitnow.domain.mower.LawnMower}
      */
     public static LawnMower newLawnMowerAtCenterPositionFacingSouth() {
         return newLawnMowerAtCenterPositionFacingGivenOrientation(Orientation.SOUTH);
@@ -26,7 +26,7 @@ public class LawnMowerFixtures {
     /**
      * Create a LawnMower at position [1, 1] facing East and return it
      *
-     * @return a new {@link com.mowitnow.domain.LawnMower}
+     * @return a new {@link com.mowitnow.domain.mower.LawnMower}
      */
     public static LawnMower newLawnMowerAtCenterPositionFacingEast() {
         return newLawnMowerAtCenterPositionFacingGivenOrientation(Orientation.EAST);
@@ -35,7 +35,7 @@ public class LawnMowerFixtures {
     /**
      * Create a LawnMower at position [1, 1] facing West and return it
      *
-     * @return a new {@link com.mowitnow.domain.LawnMower}
+     * @return a new {@link com.mowitnow.domain.mower.LawnMower}
      */
     public static LawnMower newLawnMowerAtCenterPositionFacingWest() {
         return newLawnMowerAtCenterPositionFacingGivenOrientation(Orientation.WEST);

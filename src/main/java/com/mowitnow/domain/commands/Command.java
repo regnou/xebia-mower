@@ -1,4 +1,4 @@
-package com.mowitnow.domain;
+package com.mowitnow.domain.commands;
 
 /**
  * Command interface (see Command pattern)

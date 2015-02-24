@@ -1,7 +1,9 @@
-package com.mowitnow.domain;
+package com.mowitnow.domain.commands;
+
+import com.mowitnow.domain.mower.Mower;
 
 /**
- * Created by phnx on 2/24/15.
+ * {@link com.mowitnow.domain.commands.Command} for rotating the mower (i.e receiver object) 90 degrees to the right.
  */
 public class RotateRightCommand implements Command {
 

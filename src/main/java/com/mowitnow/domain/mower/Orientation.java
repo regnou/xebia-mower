@@ -1,8 +1,8 @@
-package com.mowitnow.domain;
+package com.mowitnow.domain.mower;
 
 /**
  * This class identifies the 4 cardinal points as usually found in any orientation system.<br/>
- * It can be used to represent the orientation of any {@link com.mowitnow.domain.Mower} object.
+ * It can be used to represent the orientation of any {@link com.mowitnow.domain.mower.Mower} object.
  */
 public enum Orientation {
 
@@ -29,7 +29,7 @@ public enum Orientation {
     /**
      * Return the orientation 90 degrees left from this orientation
      *
-     * @return an {@link com.mowitnow.domain.Orientation}
+     * @return an {@link Orientation}
      */
     public Orientation getLeftOrientation() {
         return leftOrientation;
@@ -38,7 +38,7 @@ public enum Orientation {
     /**
      * Return the orientation 90 degrees right from this orientation
      *
-     * @return an {@link com.mowitnow.domain.Orientation}
+     * @return an {@link Orientation}
      */
     public Orientation getRightOrientation() {
         return rightOrientation;

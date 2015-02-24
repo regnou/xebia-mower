@@ -1,11 +1,11 @@
-package com.mowitnow.domain;
+package com.mowitnow.domain.mower;
 
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
 
 /**
- * {@link com.mowitnow.domain.LawnMower} unit testing.
+ * {@link com.mowitnow.domain.mower.LawnMower} unit testing.
  */
 @Test
 public class LawnMowerTests {

@@ -1,9 +1,9 @@
-package com.mowitnow.domain;
+package com.mowitnow.domain.mower;
 
-import static com.mowitnow.domain.Orientation.*;
+import static com.mowitnow.domain.mower.Orientation.NORTH;
 
 /**
- * Default {@link com.mowitnow.domain.Mower} implementation.
+ * Default {@link com.mowitnow.domain.mower.Mower} implementation.
  */
 public class LawnMower implements Mower {
 

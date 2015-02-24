@@ -1,7 +1,9 @@
-package com.mowitnow.domain;
+package com.mowitnow.domain.commands;
+
+import com.mowitnow.domain.mower.Mower;
 
 /**
- * {@link com.mowitnow.domain.Command} for moving the mower (i.e receiver object) forward.
+ * {@link com.mowitnow.domain.commands.Command} for moving the mower (i.e receiver object) forward.
  */
 public class MoveCommand implements Command {
 

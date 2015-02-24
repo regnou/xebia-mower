@@ -1,4 +1,4 @@
-package com.mowitnow.domain;
+package com.mowitnow.domain.mower;
 
 /**
  * This class represents a programmable and automated mower with the ability to mow any rectangular surface.

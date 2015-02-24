@@ -12,4 +12,14 @@ public class DefaultLawn implements Lawn {
         this.width = width;
         this.height = height;
     }
+
+    @Override
+    public int getWidth() {
+        return width;
+    }
+
+    @Override
+    public int getHeight() {
+        return height;
+    }
 }

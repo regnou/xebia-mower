@@ -9,13 +9,17 @@ import com.mowitnow.domain.mower.Mower;
 public class MoveCommand implements Command {
 
     private final Mower mower;
+    private final Lawn lawn;
 
     public MoveCommand(Mower mower, Lawn lawn) {
         this.mower = mower;
+        this.lawn = lawn;
     }
 
     @Override
     public void execute() {
-        mower.move();
+        if (mower.getY() < lawn.getHeight()) {
+            mower.move();
+        }
     }
 }

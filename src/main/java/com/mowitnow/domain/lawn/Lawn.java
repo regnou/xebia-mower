@@ -5,4 +5,6 @@ package com.mowitnow.domain.lawn;
  */
 public interface Lawn {
 
+    public int getWidth();
+    public int getHeight();
 }

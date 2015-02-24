@@ -20,7 +20,8 @@ public class MoveCommandTests {
 
     public void Given_MoveCommand_When_Execute_Then_VerifyThatTheMowerMoved() {
         Mower lawnMower = mock(LawnMower.class);
-        MoveCommand moveCommand = new MoveCommand(lawnMower, null);
+        Lawn lawn = DefaultLawnFixtures.newDefaultLawn();
+        MoveCommand moveCommand = new MoveCommand(lawnMower, lawn);
 
         moveCommand.execute();
 

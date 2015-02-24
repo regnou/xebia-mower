@@ -17,6 +17,6 @@ public class RotateRightCommandTests {
 
         rotateRightCommand.execute();
 
-        Mockito.verify(lawnMower).rotateLeft();
+        Mockito.verify(lawnMower).rotateRight();
     }
 }
